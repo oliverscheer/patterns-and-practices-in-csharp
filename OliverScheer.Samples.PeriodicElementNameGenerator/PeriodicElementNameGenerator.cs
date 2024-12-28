@@ -1,6 +1,4 @@
-﻿
-
-using System.Runtime.CompilerServices;
+﻿using System.Diagnostics;
 
 namespace OliverScheer.Samples.PeriodicElementNameGenerator;
 
@@ -18,9 +16,9 @@ internal class PeriodicElementNameGenerator
             for (int j = name.Length - i; j > 0; j--)
             {
                 string s = name.Substring(i, j).ToString();
-                foreach (var element in periodicTable)
+                foreach (Element element in periodicTable)
                 {
-                    if (element.Symbol.ToLower() == s)
+                    if (element.Symbol.Equals(s, StringComparison.CurrentCultureIgnoreCase))
                     {
                         elements.Add(element);
                     }
@@ -28,7 +26,7 @@ internal class PeriodicElementNameGenerator
             }
         }
 
-        return elements.ToArray();
+        return [.. elements];
     }
 
     internal void Output(Element[] result)
@@ -169,16 +167,11 @@ internal class PeriodicElementNameGenerator
         ];
 }
 
-public class Element
+[DebuggerDisplay("No: {Number} - Name: {Name} - Symbol: {Symbol}")]
+public class Element(int number, string name, string symbol)
 {
-    public int Number { get; set; }
-    public string Name { get; set; }
-    public string Symbol { get; set; }
-
-    public Element(int number, string name, string symbol)
-    {
-        Number = number;
-        Name = name;
-        Symbol = symbol;
-    }
+    public int Number { get; set; } = number;
+    public string Name { get; set; } = name;
+    public string Symbol { get; set; } = symbol;
 }
+
