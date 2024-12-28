@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliverScheer.PatternsAndPra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliverScheer.Samples.PeriodicElementNameGenerator", "OliverScheer.Samples.PeriodicElementNameGenerator\OliverScheer.Samples.PeriodicElementNameGenerator.csproj", "{AFDEF655-8F7D-4FCD-AFA3-082C513026F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliverScheer.Samples.Benchmarks", "OliverScheer.Samples.Benchmarks\OliverScheer.Samples.Benchmarks.csproj", "{17B92C8C-B9D0-4101-A5CC-A573672F8CF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AFDEF655-8F7D-4FCD-AFA3-082C513026F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDEF655-8F7D-4FCD-AFA3-082C513026F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFDEF655-8F7D-4FCD-AFA3-082C513026F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B92C8C-B9D0-4101-A5CC-A573672F8CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B92C8C-B9D0-4101-A5CC-A573672F8CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B92C8C-B9D0-4101-A5CC-A573672F8CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B92C8C-B9D0-4101-A5CC-A573672F8CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
